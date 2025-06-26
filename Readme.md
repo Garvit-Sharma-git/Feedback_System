@@ -7,8 +7,12 @@ A clean, full-stack role-based feedback system built using **FastAPI**, **React*
   
 
 ---
+## 🔗 Live Demo
 
-  
+- 🌐 **Frontend (Vercel)**: [https://feedback-system-cyan.vercel.app](https://feedback-system-cyan.vercel.app/)  
+- 🛠 **Backend (Render)**: [https://feedback-system-backend-39y1.onrender.com](https://feedback-system-backend-39y1.onrender.com)
+
+---
 
 ## 🔧 Tech Stack
 
