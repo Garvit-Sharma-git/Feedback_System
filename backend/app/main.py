@@ -132,7 +132,7 @@ def acknowledge(
     try:
         feedbacks = crud.get_feedback_for_employee(db, current_user["id"])
 
-        # ✅ Fixed: use ["id"] instead of .id
+        
         if not any(f["id"] == feedback_id for f in feedbacks):
             raise HTTPException(status_code=404, detail="Feedback not found for this user")
 
@@ -253,7 +253,7 @@ def export_feedback_pdf(manager_id: int, db: Session = Depends(get_db), current_
 
 
 
-# Optional: Get all users (for debugging)
+# Get all users (for debugging)
 @app.get("/debug/users")
 def debug_users(db: Session = Depends(get_db)):
     return db.query(User).all()

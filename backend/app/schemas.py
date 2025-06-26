@@ -23,8 +23,8 @@ class FeedbackOut(FeedbackBase):
     id: int
     acknowledged: bool
     manager_id: int
-    manager_name: Optional[str]  # New
-    manager_email: Optional[str]  # New
+    manager_name: Optional[str]  
+    manager_email: Optional[str]  
     employee_comment: Optional[str]
 
     class Config:

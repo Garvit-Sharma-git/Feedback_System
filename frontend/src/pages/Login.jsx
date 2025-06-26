@@ -23,7 +23,7 @@ const Login = () => {
     console.log("Received user from backend:", res.data);
     if (res.data?.id) {
       // Store full user object from backend
-      login(res.data); // ✅ Now includes id, name, email, role
+      login(res.data); 
       toast.success("Logged in!");
       navigate("/dashboard");
     } else {
