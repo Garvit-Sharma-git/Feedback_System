@@ -25,7 +25,7 @@ current_user: dict = Depends(get_current_user)
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-app.include_router(debug_router)
+
 
 # Allow local frontend
 app.add_middleware(
@@ -35,6 +35,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(debug_router)
 
 def get_db():
     db = SessionLocal()
